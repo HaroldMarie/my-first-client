@@ -38,11 +38,11 @@ def subscribe_(events_key):
     for x in range(0, 15):
         events = client.get_events(events_key, start, 10)
         start += len(events)
-        print(f"~ ${len(events)} new events found")
+        print(f"~ {len(events)} new events found")
         time.sleep(3)
 
         for i in range(0, len(events)):
-            print(f"~ Event # ${i + 1}:")
+            print(f"~ Event # {i + 1}:")
             print(events[i])
 
 

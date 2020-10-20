@@ -16,9 +16,9 @@ def main():
     # deserialize IntentIdentifier
     intent_identifier = decode_intent(intent_identifier)
 
-    print(f"~ Account (HEX) from intent: ${utils.account_address_hex(intent_identifier.account_address)}")
-    print(f"~ Amount from intent: ${intent_identifier.amount}")
-    print(f"~ Currency from intent: ${intent_identifier.currency_code}")
+    print(f"~ Account (HEX) from intent: {utils.account_address_hex(intent_identifier.account_address)}")
+    print(f"~ Amount from intent: {intent_identifier.amount}")
+    print(f"~ Currency from intent: {intent_identifier.currency_code}")
 
 
 def generate_intent_identifier(address: AccountAddress, amount: int, currency: str) -> str:
